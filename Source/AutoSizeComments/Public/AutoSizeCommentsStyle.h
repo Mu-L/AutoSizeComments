@@ -14,10 +14,10 @@ public:
 
 	static const FSlateBrush* GetBrush(FName PropertyName, const ANSICHAR* Specifier = NULL)
 	{
-		return StyleSet->GetBrush(PropertyName, Specifier);
+		return Style->GetBrush(PropertyName, Specifier);
 	}
 
 private:
 	/** Singleton instances of this style. */
-	static TSharedPtr<class FSlateStyleSet> StyleSet;
+	static TSharedPtr<class FSlateStyleSet> Style;
 };
